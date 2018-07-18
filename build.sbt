@@ -41,7 +41,9 @@ val slf4jVersion = "1.7.25"
 
 libraryDependencies ++= Seq(
   "org.apache.solr"         % "solr-solrj"        % solrVersion,
-  "org.asynchttpclient"     % "async-http-client" % "2.5.1",
+  "com.typesafe.play"      %% "play-ahc-ws"       % "2.7.0-M1",
+  "com.typesafe.play"      %% "play-ws"           % "2.7.0-M1",
+  "com.typesafe.play"      %% "play-json"         % "2.6.8",
   "org.scala-lang.modules" %% "scala-xml"         % "1.1.0",
   "org.scala-lang.modules" %% "scala-java8-compat"% "0.9.0",
   "io.dropwizard.metrics"   % "metrics-core"      % "3.2.6" % "optional",
